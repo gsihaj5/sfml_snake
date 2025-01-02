@@ -17,5 +17,10 @@ FetchContent_Declare(SFML
     SYSTEM)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(main src/main.cpp)
+set(SOURCE_FILES
+    src/main.cpp
+    src/Snake.cpp
+    )
+
+add_executable(main ${SOURCE_FILES})
 target_link_libraries(main PRIVATE SFML::Graphics)
