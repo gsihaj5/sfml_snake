@@ -9,7 +9,7 @@ https://cmake.org/
 
 create build file 
 
-`cmake -B build`
+`cmake -B build -G "Ninja"`
 
 compile the code 
 
